@@ -7,6 +7,10 @@ const router = express.Router()
 
 const Markets = require('../models/markets')
 
+router.get('/', (req, res) => {
+    res.send('Nothing to show here')
+})
+
 router.get('/:id', (req, res) => {
     request.get(`https://coinmarketcap.com/currencies/${req.params.id}/`, (err, response, body) => {
         const $ = cheerio.load(body)
