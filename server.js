@@ -27,11 +27,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/api/', coinmarketcap)
-app.use('/api/market', markets)
-
-app.get('*', (req, res) => {
-    res.send('404 page not found')
-})
+app.use('/api/market/', markets)
 
 app.listen(PORT, () => {
     console.log('server start at port ' + PORT)

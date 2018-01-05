@@ -8,7 +8,10 @@ const router = express.Router()
 const Markets = require('../models/markets')
 
 router.get('/', (req, res) => {
-    res.send('Nothing to show here')
+    console.log(res)
+    res.json({
+        message: 'Nothing to see here'
+    })
 })
 
 router.get('/:id', (req, res) => {

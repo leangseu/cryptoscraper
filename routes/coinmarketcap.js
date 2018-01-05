@@ -34,7 +34,7 @@ router.put('/update', (req, res) => {
     })
 })
 
-router.get('/:id', (req, res) => {
+router.get('/coin/:id', (req, res) => {
     const id = req.params.id.toString()
     axios.get('https://api.coinmarketcap.com/v1/ticker/' + id)
     .then(data => {
