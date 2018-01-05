@@ -17,7 +17,6 @@ mongoose.connect('mongodb://admin:admin@ds239587.mlab.com:39587/cryptoscraper', 
     if (err) console.log("Failed to connect to db - " + err)
 })
 
-
 // body parser
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())

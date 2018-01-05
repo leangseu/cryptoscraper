@@ -14,8 +14,8 @@ router.get('/:id', (req, res) => {
         var contents = {
             marketCap: $('span[data-currency-market-cap]').data('usd'),
             volume24h: $('span[data-currency-volume]').data('usd'),
-            circulateSupply: $('.coin-summary-item-detail')[2].innerHTML.trim(),
-            totalSupply: $('.coin-summary-item-detail')[3].innerHTML.trim(),
+            circulateSupply: $($('.coin-summary-item-detail')[2]).text().trim(),
+            totalSupply: $($('.coin-summary-item-detail')[3]).text().trim(),
             twitterLink: $('.twitter-timeline').attr('href'),
             redditLink: $('.reddit-title>a').attr('href'),
             markets: [],
