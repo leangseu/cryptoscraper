@@ -1,0 +1,20 @@
+{
+  "name": "cryptoscrapter",
+  "version": "1.0.0",
+  "description": "scrap data from coinmarketcap",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "leangseu",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.0-rc2",
+    "request": "^2.83.0"
+  }
+}
